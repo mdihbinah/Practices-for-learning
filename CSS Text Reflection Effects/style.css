@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.div{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(lightgreen);
+}
+
+h1{
+    position: relative;
+    color: #fff;
+    font-size: 5rem;
+}
+h1::before{
+    content:attr(data-xtra);
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 5.1rem;
+    transform-origin: bottom;
+    transform: rotateX(180deg);
+    opacity: 90%;
+    background: linear-gradient(0deg, #ffff 0, transparent 90%);
+    background-clip: text;
+    color: transparent;
+}
+.mirror{
+    min-height: 100vh;
+    background-color: #FFD8DF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.mirror > h1{
+    position: absolute;
+}
+.h2{
+    pointer-events: none;
+    transform-origin: bottom;
+    transform: rotateX(180deg);
+    line-height: 3.7rem;
+    color: transparent;
+    background: linear-gradient(0deg, #ffff 0, transparent 95%);
+    background-clip: text;
+
+}
